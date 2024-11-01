@@ -1,0 +1,11 @@
+{
+  "flow" : {
+    "createdTimestamp" : 1730483792607,
+    "description" : "A versioned flow with configured DBCPConnectionPools for my Docker containers",
+    "identifier" : "DBCPConnectionPools",
+    "lastModifiedTimestamp" : 1730483792607,
+    "name" : "DBCPConnectionPools",
+    "versionCount" : 0
+  },
+  "latest" : false
+}
