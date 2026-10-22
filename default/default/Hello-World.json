@@ -1536,6 +1536,56 @@
       "type" : "org.apache.nifi.processors.standard.PutFile",
       "yieldDuration" : "1 sec"
     }, {
+      "autoTerminatedRelationships" : [ ],
+      "backoffMechanism" : "PENALIZE_FLOWFILE",
+      "bulletinLevel" : "WARN",
+      "bundle" : {
+        "artifact" : "nifi-parquet-nar",
+        "group" : "org.apache.nifi",
+        "version" : "2.11.0.4.13.0.0-948"
+      },
+      "comments" : "",
+      "componentType" : "PROCESSOR",
+      "concurrentlySchedulableTaskCount" : 1,
+      "executionNode" : "ALL",
+      "groupIdentifier" : "flow-contents-group",
+      "identifier" : "b374529e-308b-31e3-9f05-4aa897e447c0",
+      "maxBackoffPeriod" : "10 mins",
+      "name" : "CalculateParquetOffsets",
+      "penaltyDuration" : "30 sec",
+      "position" : {
+        "x" : 1914.355685131195,
+        "y" : 320.0233236151604
+      },
+      "properties" : {
+        "Zero Content Output" : "false"
+      },
+      "propertyDescriptors" : {
+        "Records Per Split" : {
+          "displayName" : "Records Per Split",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Records Per Split",
+          "sensitive" : false
+        },
+        "Zero Content Output" : {
+          "displayName" : "Zero Content Output",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Zero Content Output",
+          "sensitive" : false
+        }
+      },
+      "retriedRelationships" : [ ],
+      "retryCount" : 10,
+      "runDurationMillis" : 0,
+      "scheduledState" : "ENABLED",
+      "schedulingPeriod" : "0 sec",
+      "schedulingStrategy" : "TIMER_DRIVEN",
+      "style" : { },
+      "type" : "org.apache.nifi.processors.parquet.CalculateParquetOffsets",
+      "yieldDuration" : "1 sec"
+    }, {
       "autoTerminatedRelationships" : [ "failure", "success" ],
       "backoffMechanism" : "PENALIZE_FLOWFILE",
       "bulletinLevel" : "WARN",
@@ -1701,6 +1751,6 @@
   "snapshotMetadata" : {
     "author" : "admin",
     "flowIdentifier" : "Hello-World",
-    "timestamp" : 1792696256273
+    "timestamp" : 1792697353605
   }
 }
